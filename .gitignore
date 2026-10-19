@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets -- provider keys and IRONHARNESS_* tokens belong in the environment
+.env
+.env.*
+
+# Local policy may carry inline upstream api_key values; the starter policy is generated from code
+policy.yaml
+policy.local.yaml
+
+# Runtime data -- the store holds audit logs and the PII vault
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
